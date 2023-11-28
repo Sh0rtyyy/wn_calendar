@@ -11,7 +11,7 @@ client_scripts {
 shared_script {
     "config.lua",
     '@ox_lib/init.lua',
-    '@es_extended/imports.lua' -- Uncomment if you are using ESX
+    '@es_extended/imports.lua' -- Comment out if you are not using ESX
 }
 
 server_scripts {
