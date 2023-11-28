@@ -99,7 +99,6 @@ AddEventHandler('wn_calendar:giveitems', function(prizeName)
             {['@playerIdentifier'] = identifiers, ['@prizeName'] = prizeName}
         )        
     else
-        print("Player has already received a prize on this date/prizeName.")
         lib.notify(src, {
             title = 'Calendar',
             description = 'You allready had collected prises for this date !',
