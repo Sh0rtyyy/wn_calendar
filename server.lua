@@ -40,7 +40,7 @@ AddEventHandler('wn_calendar:giveitems', function(prizeName)
         identifiers = xPlayer.identifier
     elseif Config.Framework == "qbcore" then
         xPlayer = QBCore.Functions.GetPlayer(src)
-        identifiers = xPlayer.Functions.GetIdentifier(src)
+        identifiers = xPlayer.PlayerData.citizenid
     end
 
     -- Check if the player has already received a prize on the specified date/prizeName
