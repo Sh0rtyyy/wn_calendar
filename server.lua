@@ -1,7 +1,6 @@
 if Config.Framework == "ESX" then
     ESX = exports["es_extended"]:getSharedObject()
 elseif Config.Framework == "qbcore" then
-    QBCore = nil
     QBCore = exports['qb-core']:GetCoreObject()
 end
 
