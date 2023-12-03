@@ -1,10 +1,9 @@
 fx_version "cerulean"
 game "gta5"
 
-version "1.1.0"
-
 lua54 "yes"
 
+version "2.0.0"
 
 client_scripts {
     "client.lua",
@@ -13,7 +12,7 @@ client_scripts {
 shared_script {
     "config.lua",
     '@ox_lib/init.lua',
-    '@es_extended/imports.lua' -- Comment out if you are not using ESX
+    '@es_extended/imports.lua' -- Uncomment if you are using ESX
 }
 
 server_scripts {
