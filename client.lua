@@ -52,15 +52,14 @@ lib.callback.register('wn_calendar:serverprogress', function()
     })
 end)
 
-RegisterNetEvent('wn_calendar:open', function()
+local function calendarOpen()
     lib.registerContext({
         id = 'calendar_menu',
         title = "Calendar",
         options = Options,
     })
     lib.showContext('calendar_menu')
-end)
+end
 
-RegisterCommand("calendar", function(source, args, rawCommand)
-    TriggerEvent("wn_calendar:open")
-end, false)
+RegisterCommand('calendar', calendarOpen)
+RegisterNetEvent('wn_calendar:open', calendarOpen)
